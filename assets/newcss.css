@@ -652,17 +652,10 @@ img {
 .portfolio__container {
   overflow: initial;
 }
-/*need change*/
-/* .portfolio__content {
-  display: grid;
-  padding: 0 1.5rem;
-} */
 
 .portfolio__content {
-  display: grid;
-  grid-template-columns: 1fr;
-  align-items: center;
-  gap: 1.5rem;
+  grid-template-columns: 1fr; /* Only ONE column now */
+  text-align: center; /* Optional: center the text on mobile */
 }
 
 
@@ -1155,18 +1148,3 @@ img {
     max-width: 315px;
   }
 }
-
-
-
-
-.video-container {
-  width: 560px;
-  border-radius: 0.5rem;
-  justify-self: center;
-}
-
-
-
-
-
-
