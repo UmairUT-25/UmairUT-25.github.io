@@ -653,9 +653,27 @@ img {
   overflow: initial;
 }
 /*need change*/
-.portfolio__content {
+/* .portfolio__content {
+  display: grid;
   padding: 0 1.5rem;
+} */
+
+.portfolio__content {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  gap: 1.5rem;
 }
+
+
+/* For small screens (phones), stack video and text vertically */
+@media (max-width: 768px) {
+  .portfolio__content {
+    grid-template-columns: 1fr; /* Only ONE column now */
+    text-align: center; /* Optional: center the text on mobile */
+  }
+}
+
 .portfolio__img {
   width: 310px;
   border-radius: 0.5rem;
@@ -1117,6 +1135,27 @@ img {
     bottom: -4.5rem;
   }
 }
+
+.video-container {
+  width: 100%;
+  max-width: 560px;
+  height: 315px;
+  border-radius: 0.5rem;
+  justify-self: center;
+}
+
+/* Adjust height automatically based on width for better aspect ratio */
+.video-container {
+  aspect-ratio: 16 / 9;
+}
+
+/* On very small screens, you can control it even tighter if needed */
+@media (max-width: 400px) {
+  .video-container {
+    max-width: 315px;
+  }
+}
+
 
 
 
